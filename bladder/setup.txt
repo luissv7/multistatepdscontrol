@@ -1,0 +1,21 @@
+n=30;
+p=3;
+X=apply(n,i->"x"|(i+1));
+DEN = apply(n,i->"x"|(i+1)|"-x"|(i+1)|"^"|p);
+u_indices=set(1..30) ** set(1..30);
+u_indices=toList(u_indices);
+Uedge=apply(u_indices,i->"u_"|toString(i));
+Unode=apply(30,i->"u_"|toString(i+1));
+Vnode=apply(30,i->"v_"|toString(i+1));
+
+
+
+
+
+DEN = join(DEN,apply(u_indices,i->"u_"|toString(i)|"-u_"|toString(i)|"^"|p));
+
+DEN=join(DEN,apply(Unode,u->u|"-"|u|"^"|p), apply(Vnode,v->v|"-"|v|"^"|p));
+R = ZZ/p[join(X,Uedge,Unode,Vnode)/value]/ideal(DEN/value);
+X=X/value; Uedge=Uedge/value; Unode=Unode/value; Vnode=Vnode/value;
+load "/Users/sordol/Desktop/Supplementary_Materials/bladder/polynomials.txt";
+F=apply(n,i->value("f"|(i+1)))/value;
