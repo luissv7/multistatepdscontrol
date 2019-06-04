@@ -51,8 +51,8 @@ load "/Users/sordol/Desktop/Supplementary_Materials/bladder/setup.txt"
 Fec=new MutableList from F;
 
 
-Fec#(9)=sub(F_9,{x3=>0});
-Fec#(8)=0_R;
+Fec#(8)=sub(F_8,{x3=>0});
+Fec#(9)=0_R;
 Fec=toList Fec;
 I=ideal(Fec-X);
 S=ZZ/3[X];
