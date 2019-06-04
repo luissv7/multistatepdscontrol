@@ -1,6 +1,6 @@
-load "/Users/sordol/Desktop/Supplementary_Materials/bladder/setup.txt"
+load "setup.txt"
 
-load "/Users/sordol/Desktop/Supplementary_Materials/bladder/points.txt"
+load "points.txt"
 
 
 ----Indicies for nodes we would like to cut out their interactions with other nodes.
