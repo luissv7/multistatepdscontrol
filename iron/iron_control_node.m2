@@ -30,11 +30,11 @@
 
 
 ---Substitute with your path
-load "/Users/sordol/Desktop/iron/iron_model_no_continuity.m2"
+load "iron_model_no_continuity.m2"
 
 
 -- Generators will be written here.
-results="/Users/sordol/Desktop/iron/generators.txt"<<""
+results="generators.txt"<<""
 
 
 -----Let's simulate RAS overexpression
@@ -62,22 +62,23 @@ F=apply(n,i->value("f"|(i+1)));
 
 --Indices for nodes that we wish to target
 
-
-controllable={1,2,4,5,6,8,11,12,15}
-
-
-
 --Making a mutable copy of F.
-Fec=new MutableList from F;
+--Fec=new MutableList from F;
+
 
 
 --Control values encoded.
+
+controllable={1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
+
+
+Fec=new MutableList from F;
 for j in controllable do ((Fec#(j-1)=(1-value(u_j)^2)*value(Fec#(j-1))))
-	
-
-
----Converting back to list	
+---Converting back to list
 Fec=toList Fec;
+
+
+
 
 
 
@@ -86,13 +87,15 @@ Fec=toList Fec;
 --Find all steady states where Ferroportin is 0
 I=join(Fec-X,{x3});
 
-I=ideal(I);
+
 
 
 
 --Find the generators of this ideal
 J=gens gb I;
 
+
+---time gens gb ideal(I)
 
 
 ---Write results
@@ -103,29 +106,11 @@ results<<J;
 results<<close;
 
 
-
+exit
 ---test found controls
-Ftry=new MutableList from F;
-Ftry#5=0_R;
-Ftry#14=0_R;
-Ftry= toList Ftry;
+---Ftry=new MutableList from F;
+----Ftry#5=0_R;
+----Ftry#14=0_R;
+----Ftry= toList Ftry;
 
-gens gb ideal(Ftry-X)
-
-results<<close
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----gens gb ideal(Ftry-X)

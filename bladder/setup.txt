@@ -17,5 +17,5 @@ DEN = join(DEN,apply(u_indices,i->"u_"|toString(i)|"-u_"|toString(i)|"^"|p));
 DEN=join(DEN,apply(Unode,u->u|"-"|u|"^"|p), apply(Vnode,v->v|"-"|v|"^"|p));
 R = ZZ/p[join(X,Uedge,Unode,Vnode)/value]/ideal(DEN/value);
 X=X/value; Uedge=Uedge/value; Unode=Unode/value; Vnode=Vnode/value;
-load "/Users/sordol/Desktop/Supplementary_Materials/bladder/polynomials.txt";
+load "polynomials.txt";
 F=apply(n,i->value("f"|(i+1)))/value;
