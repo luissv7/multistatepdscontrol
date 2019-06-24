@@ -44,7 +44,7 @@ exit
 
 --Attempting the control delete the edge from RAS to E2F1 and knockdown E2F3
 --load "aux/setup.txt"
-loadPackage "RationalPoints"
+--loadPackage "RationalPoints"
 
 
 
