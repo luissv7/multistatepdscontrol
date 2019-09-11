@@ -1,6 +1,6 @@
-load "setup.txt"
-
-load "points.txt"
+append(path, "/home/data")
+load "helper_files/setup.txt"
+load "helper_files/points.txt"
 
 
 ----Indicies for nodes we would like to cut out their interactions with other nodes.
@@ -21,7 +21,7 @@ Fec=apply(23,k->(1-Unode_k^2)*(Fec#(k)_R));
 Fec=join(Fec,apply(23..29,k->(F_k)_R));
 Fec=toList Fec;
 
-results="targeted_edge_node.txt"<<""
+results="output/targeted_edge_node.txt"<<""
 
 
 I1=ideal(apply(n,k->Fec_k-(s1_k)_R));

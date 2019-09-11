@@ -1,4 +1,34 @@
-----These are the polynomial functions of the model presented in PMID 26238783
+--EGFR=x1
+--FGFR3=x2
+--RAS=x3
+--PTEN =x4
+--PI3K=x5
+--AKT=x6
+--GRB2=x7
+--SPRY=x8
+--x9=E2F1
+--x10=E2F3
+--CyclinD1=x11
+--CyclinE1=x12
+--CyclinA=x13
+--CDC25A=x14
+--p16INK4a=x15
+---p14ARF=x16
+--RB1=x17
+--RBL2=x18
+--x19= p21CIP
+--x20=ATM
+--x21=CHECK1_2
+--x22=MDM2
+---x23= TP53
+--x24=Proliferation
+--x25=Apoptosis
+--x26=Growth_arrest
+--x27=EGFR_stimulus
+--x28=FGFR3_Stimulus
+--x29=DNA_damage
+--x30=Growth_inhibitors
+---These are the polynomial functions of the model presented in PMID 26238783
 
 f1 = -x2^2*x7^2*x8^2*x27^2+x2^2*x7^2*x8^2+x2^2*x7^2*x27^2+x2^2*x8^2*x27^2+x7^2*x8^2*x27^2-x2^2*x8^2-x7^2*x8^2-x2^2*x27^2-x7^2*x27^2-x8^2*x27^2+x8^2+x27^2
 f2 = x1^2*x7^2*x28^2-x1^2*x28^2-x7^2*x28^2+x28^2
@@ -30,36 +60,3 @@ f27 = x27^2
 f28 = x28^2
 f29 = x29^2
 f30 = x30^2
-
-
---EGFR=x1
---FGFR3=x2
---RAS=x3
---PTEN =x4
---PI3K=x5
---AKT=x6
---GRB2=x7
---SPRY=x8
---x9=E2F1
----x10=E2F3
---CyclinD1=x11
---CyclinE1=x12
----CyclinA=x13
----CDC25A=x14
----p16INK4a=x15
----p14ARF=x16
---RB1=x17
---RBL2=x18
---x19= p21CIP
---x20=ATM
-----x21=CHECK1_2
---x22=MDM2
----x23= TP53
---x24=Proliferation
---x25=Apoptosis
---x26=Growth_arrest
---x27=EGFR_stimulus
---x28=FGFR3_Stimulus
---x29=DNA_damage
---x30=Growth_inhibitors
-

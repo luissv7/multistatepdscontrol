@@ -22,44 +22,18 @@
 --x22 = LIPmt
 --x23 = Mfrn
 --x24 = Ftmt
-
-
------Function f1 is too long and displays ^G^G^G due to limitations on
---emacs that I cannot figure out for now. Thus we write the set up on
---the separate file ./iron_model.m2 and load it.
-
-
+append(path, "/home/data")
+load "polynomials/iron_model_no_continuity.m2"
 ---Substitute with your path
-load "iron_model_no_continuity.m2"
-
-
 -- Generators will be written here.
-results="generators.txt"<<""
+results="output/node_control_generators.txt"<<""
 
 
 -----Let's simulate RAS overexpression
-
 f16=2_R
-
-
-
 -------------------------------------
-
-
 ----- Make a single list of polynomials
 F=apply(n,i->value("f"|(i+1)));
-
-
-
-
-
-
-
-
-
-
-
-
 --Indices for nodes that we wish to target
 
 --Making a mutable copy of F.
@@ -70,42 +44,22 @@ F=apply(n,i->value("f"|(i+1)));
 --Control values encoded.
 
 controllable={1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
-
-
+print "hello"
 Fec=new MutableList from F;
 for j in controllable do ((Fec#(j-1)=(1-value(u_j)^2)*value(Fec#(j-1))))
 ---Converting back to list
 Fec=toList Fec;
-
-
-
-
-
-
-
-
 --Find all steady states where Ferroportin is 0
 I=join(Fec-X,{x3});
-
-
-
-
-
 --Find the generators of this ideal
-J=gens gb I;
-
-
+print "hello"
+J=gens gb ideal(I);
+print J
 ---time gens gb ideal(I)
-
-
 ---Write results
 results<<J;
-
-
 ---- Close results file
 results<<close;
-
-
 exit
 ---test found controls
 ---Ftry=new MutableList from F;

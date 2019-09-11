@@ -19,5 +19,9 @@ RUN dpkg -i *.deb
 RUN rm -r *.deb 
 RUN apt-get -y remove wget 
 
-ENTRYPOINT M2
+RUN mkdir /home/data
+WORKDIR /home/data 
+
+ENTRYPOINT ["/usr/bin/M2"]
+CMD ["--copyright"]
 LABEL maintainer="Luis Sordo Vieira, sordovieira@uchc.edu"

@@ -7,18 +7,18 @@
 --GRB2=x7
 --SPRY=x8
 --x9=E2F1
----x10=E2F3
+--x10=E2F3
 --CyclinD1=x11
 --CyclinE1=x12
----CyclinA=x13
----CDC25A=x14
----p16INK4a=x15
+--CyclinA=x13
+--CDC25A=x14
+--p16INK4a=x15
 ---p14ARF=x16
 --RB1=x17
 --RBL2=x18
 --x19= p21CIP
 --x20=ATM
-----x21=CHECK1_2
+--x21=CHECK1_2
 --x22=MDM2
 ---x23= TP53
 --x24=Proliferation
@@ -28,4 +28,3 @@
 --x28=FGFR3_Stimulus
 --x29=DNA_damage
 --x30=Growth_inhibitors
-

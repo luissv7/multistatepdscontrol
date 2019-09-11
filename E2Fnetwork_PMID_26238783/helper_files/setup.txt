@@ -1,3 +1,4 @@
+
 n=30;
 p=3;
 X=apply(n,i->"x"|(i+1));
@@ -17,5 +18,5 @@ DEN = join(DEN,apply(u_indices,i->"u_"|toString(i)|"-u_"|toString(i)|"^"|p));
 DEN=join(DEN,apply(Unode,u->u|"-"|u|"^"|p), apply(Vnode,v->v|"-"|v|"^"|p));
 R = ZZ/p[join(X,Uedge,Unode,Vnode)/value]/ideal(DEN/value);
 X=X/value; Uedge=Uedge/value; Unode=Unode/value; Vnode=Vnode/value;
-load "polynomials.txt";
+load "polynomials/polynomials.txt";
 F=apply(n,i->value("f"|(i+1)))/value;
