@@ -5,8 +5,6 @@
 ```bash
 ├── README.md
 ├── find_node_control.m2
-├── find_steady_states.m2
-├── generate_polynomials.m2
 ├── output
 │   ├── targeted_edge_node.txt
 ├── polynomials

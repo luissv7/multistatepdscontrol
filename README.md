@@ -16,10 +16,3 @@ parsing.py
 ``` 
 
 is a helper script to pull out generators that only contain "us" from Macaulay2 output.
-
-For convenience, we include a Dockerfile to build a Docker image for [Macaulay2](http://www2.macaulay2.com/Macaulay2/) in the 
-```bash 
-m2dockerized/
-```
-
-directory.

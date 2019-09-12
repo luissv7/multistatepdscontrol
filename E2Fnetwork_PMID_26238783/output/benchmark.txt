@@ -1,0 +1,60 @@
+Run 1 of find_controls.m2
+
+real	0m2.955s
+user	0m0.042s
+sys	0m0.021s
+
+Run 2 of find_controls.m2
+
+real	0m3.270s
+user	0m0.039s
+sys	0m0.017s
+
+Run 3 of find_controls.m2
+
+real	0m3.209s
+user	0m0.038s
+sys	0m0.017s
+
+Run 4 of find_controls.m2
+
+real	0m3.279s
+user	0m0.039s
+sys	0m0.017s
+
+Run 5 of find_controls.m2
+
+real	0m3.330s
+user	0m0.037s
+sys	0m0.017s
+
+Run 6 of find_controls.m2
+
+real	0m3.314s
+user	0m0.039s
+sys	0m0.018s
+
+Run 7 of find_controls.m2
+
+real	0m3.269s
+user	0m0.037s
+sys	0m0.017s
+
+Run 8 of find_controls.m2
+
+real	0m3.222s
+user	0m0.033s
+sys	0m0.016s
+
+Run 9 of find_controls.m2
+
+real	0m3.278s
+user	0m0.033s
+sys	0m0.017s
+
+Run 10 of find_controls.m2
+
+real	0m3.320s
+user	0m0.034s
+sys	0m0.018s
+

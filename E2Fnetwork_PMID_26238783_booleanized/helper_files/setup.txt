@@ -1,10 +1,11 @@
-n=30;
-p=3;
+
+n=35;
+p=2;
 X=apply(n,i->"x"|(i+1));
 DEN = apply(n,i->"x"|(i+1)|"-x"|(i+1)|"^"|p);
 
-u_indices=toList(set(2,3,6,8,9,10,15,16,20) ** set(2,3,6,8,9,10,15,16,20));
-u_nodes=1..23
+u_indices=toList(set(2,3,6,8,9,10,15,16,20,31,32,34) ** set(2,3,6,8,9,10,15,16,20,31,32,34));
+u_nodes=join(1..23,{31,32,34})
 Uedge=apply(u_indices,i->"u_"|toString(i));
 Unode=apply(u_nodes,i->"u_"|toString(i));
 
@@ -13,8 +14,5 @@ DEN = join(DEN,apply(u_indices,i->"u_"|toString(i)|"-u_"|toString(i)|"^"|p));
 DEN=join(DEN,apply(Unode,u->u|"-"|u|"^"|p));
 R = ZZ/p[join(X,Uedge,Unode)/value]/ideal(DEN/value);
 X=X/value; Uedge=Uedge/value; Unode=Unode/value;
-load "polynomials/polynomials.txt";
-F=apply(n,i->value("f"|(i+1)))/value;
-
 load "polynomials/polynomials.txt";
 F=apply(n,i->value("f"|(i+1)))/value;

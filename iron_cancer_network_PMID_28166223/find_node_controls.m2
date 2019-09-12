@@ -44,7 +44,6 @@ F=apply(n,i->value("f"|(i+1)));
 --Control values encoded.
 
 controllable={1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
-print "hello"
 Fec=new MutableList from F;
 for j in controllable do ((Fec#(j-1)=(1-value(u_j)^2)*value(Fec#(j-1))))
 ---Converting back to list
@@ -52,9 +51,7 @@ Fec=toList Fec;
 --Find all steady states where Ferroportin is 0
 I=join(Fec-X,{x3});
 --Find the generators of this ideal
-print "hello"
 J=gens gb ideal(I);
-print J
 ---time gens gb ideal(I)
 ---Write results
 results<<J;

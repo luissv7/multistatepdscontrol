@@ -26,28 +26,22 @@ printWidth=0;
 n=24;
 p=3;
 
-u_indices=set(1..n) ** set(1..n);
 
 
-u_indices=toList(u_indices);
 
-
-U=apply(u_indices,i->"u_"|toString(i));
-Unode=apply(30,i->"u_"|toString(i+1));
+controllable={1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
+U=apply(controllable,i->"u_"|toString(i));
 --variables
 X=apply(n,i->"x"|(i+1));
-
-
 DEN = apply(n,i->"x"|(i+1)|"-x"|(i+1)|"^"|p);
-DEN = join(DEN,apply(u_indices,i->"u_"|toString(i)|"-u_"|toString(i)|"^"|p));
-DEN=join(DEN,apply(Unode,u->u|"-"|u|"^"|p));
+DEN=join(DEN,apply(U,u->u|"-"|u|"^"|p));
 
 
 
 --for quotient
 
-R = ZZ/p[join(X,U,Unode)/value]/ideal(DEN/value);
-X=X/value;  U=U/value; Unode=Unode/value;
+R = ZZ/p[join(X,U)/value]/ideal(DEN/value);
+X=X/value;  U=U/value; 
 
 f1 = x2+2*x2^2*x23+2*x2*x23^2+2*x2^2*x23^2+2*x2^2*x3+x2^2*x23*x3+2*x2^2*x23^2*x3+2*x2*x3^2+2*x2^2*x3^2+2*x2^2*x23*x3^2+x2*x23^2*x3^2+2*x2^2*x4+x2^2*x23*x4+2*x2^2*x23^2*x4+x2^2*x3*x4+2*x2^2*x23*x3*x4+x2^2*x23^2*x3*x4+2*x2^2*x3^2*x4+x2^2*x23*x3^2*x4+2*x2^2*x23^2*x3^2*x4+2*x2*x4^2+2*x2^2*x4^2+2*x2^2*x23*x4^2+x2*x23^2*x4^2+2*x2^2*x3*x4^2+x2^2*x23*x3*x4^2+2*x2^2*x23^2*x3*x4^2+x2*x3^2*x4^2+2*x2^2*x23*x3^2*x4^2+2*x2*x23^2*x3^2*x4^2+2*x2^2*x23^2*x3^2*x4^2+x8+2*x2*x8+x2^2*x8+2*x23^2*x8+x2*x23^2*x8+2*x2^2*x23^2*x8+2*x3^2*x8+x2*x3^2*x8+2*x2^2*x3^2*x8+x23^2*x3^2*x8+2*x2*x23^2*x3^2*x8+x2^2*x23^2*x3^2*x8+2*x4^2*x8+x2*x4^2*x8+2*x2^2*x4^2*x8+x23^2*x4^2*x8+2*x2*x23^2*x4^2*x8+x2^2*x23^2*x4^2*x8+x3^2*x4^2*x8+2*x2*x3^2*x4^2*x8+x2^2*x3^2*x4^2*x8+2*x23^2*x3^2*x4^2*x8+x2*x23^2*x3^2*x4^2*x8+2*x2^2*x23^2*x3^2*x4^2*x8+x2*x8^2+x2^2*x8^2+2*x23*x8^2+x2^2*x23*x8^2+2*x23^2*x8^2+2*x2*x23^2*x8^2+2*x3*x8^2+x2^2*x3*x8^2+x23*x3*x8^2+2*x2^2*x23*x3*x8^2+2*x23^2*x3*x8^2+x2^2*x23^2*x3*x8^2+2*x3^2*x8^2+2*x2*x3^2*x8^2+2*x23*x3^2*x8^2+x2^2*x23*x3^2*x8^2+x2*x23^2*x3^2*x8^2+x2^2*x23^2*x3^2*x8^2+2*x4*x8^2+x2^2*x4*x8^2+x23*x4*x8^2+2*x2^2*x23*x4*x8^2+2*x23^2*x4*x8^2+x2^2*x23^2*x4*x8^2+x3*x4*x8^2+2*x2^2*x3*x4*x8^2+2*x23*x3*x4*x8^2+x2^2*x23*x3*x4*x8^2+x23^2*x3*x4*x8^2+2*x2^2*x23^2*x3*x4*x8^2+2*x3^2*x4*x8^2+x2^2*x3^2*x4*x8^2+x23*x3^2*x4*x8^2+2*x2^2*x23*x3^2*x4*x8^2+2*x23^2*x3^2*x4*x8^2+x2^2*x23^2*x3^2*x4*x8^2+2*x4^2*x8^2+2*x2*x4^2*x8^2+2*x23*x4^2*x8^2+x2^2*x23*x4^2*x8^2+x2*x23^2*x4^2*x8^2+x2^2*x23^2*x4^2*x8^2+2*x3*x4^2*x8^2+x2^2*x3*x4^2*x8^2+x23*x3*x4^2*x8^2+2*x2^2*x23*x3*x4^2*x8^2+2*x23^2*x3*x4^2*x8^2+x2^2*x23^2*x3*x4^2*x8^2+x2*x3^2*x4^2*x8^2+x2^2*x3^2*x4^2*x8^2+2*x23*x3^2*x4^2*x8^2+x2^2*x23*x3^2*x4^2*x8^2+2*x23^2*x3^2*x4^2*x8^2+2*x2*x23^2*x3^2*x4^2*x8^2
 f2 = x19+x5^2+2*x19^2*x5^2+x6+2*x19*x6+x19^2*x6+x19*x6^2+x19^2*x6^2+2*x5^2*x6^2+x19^2*x5^2*x6^2
