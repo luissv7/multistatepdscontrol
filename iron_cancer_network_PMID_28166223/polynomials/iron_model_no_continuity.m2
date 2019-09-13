@@ -29,7 +29,7 @@ p=3;
 
 
 
-controllable={1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
+controllable={1, 2, 4, 5, 6,7, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
 U=apply(controllable,i->"u_"|toString(i));
 --variables
 X=apply(n,i->"x"|(i+1));

@@ -43,7 +43,7 @@ F=apply(n,i->value("f"|(i+1)));
 
 --Control values encoded.
 
-controllable={1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
+controllable={1, 2, 4, 5, 6,7,7,7,7,7,7,7, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23, 24}
 Fec=new MutableList from F;
 for j in controllable do ((Fec#(j-1)=(1-value(u_j)^2)*value(Fec#(j-1))))
 ---Converting back to list
