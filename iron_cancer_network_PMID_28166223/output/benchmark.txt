@@ -1,60 +1,60 @@
 Run 1 of find_controls.m2
 
-real	0m10.905s
+real	0m10.095s
 user	0m0.041s
-sys	0m0.019s
+sys	0m0.017s
 
 Run 2 of find_controls.m2
 
-real	0m10.774s
-user	0m0.033s
+real	0m10.478s
+user	0m0.036s
 sys	0m0.017s
 
 Run 3 of find_controls.m2
 
-real	0m11.171s
-user	0m0.034s
-sys	0m0.015s
+real	0m10.673s
+user	0m0.038s
+sys	0m0.019s
 
 Run 4 of find_controls.m2
 
-real	0m10.861s
+real	0m11.046s
 user	0m0.037s
 sys	0m0.016s
 
 Run 5 of find_controls.m2
 
-real	0m10.606s
-user	0m0.032s
-sys	0m0.015s
+real	0m10.359s
+user	0m0.031s
+sys	0m0.014s
 
 Run 6 of find_controls.m2
 
-real	0m11.141s
-user	0m0.035s
-sys	0m0.015s
+real	0m10.940s
+user	0m0.039s
+sys	0m0.018s
 
 Run 7 of find_controls.m2
 
-real	0m10.707s
-user	0m0.032s
-sys	0m0.015s
+real	0m10.626s
+user	0m0.039s
+sys	0m0.016s
 
 Run 8 of find_controls.m2
 
-real	0m10.648s
+real	0m10.616s
 user	0m0.037s
-sys	0m0.016s
+sys	0m0.017s
 
 Run 9 of find_controls.m2
 
-real	0m10.788s
-user	0m0.036s
+real	0m10.744s
+user	0m0.033s
 sys	0m0.015s
 
 Run 10 of find_controls.m2
 
-real	0m10.481s
-user	0m0.036s
-sys	0m0.018s
+real	0m10.298s
+user	0m0.039s
+sys	0m0.016s
 
