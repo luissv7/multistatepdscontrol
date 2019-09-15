@@ -2,7 +2,9 @@
 
 Author: Luis Sordo Vieira, sordovieira@uchc.edu
 
-These are the scripts to find controls from two models:
+This repository includes control methods that use the _Polynomial Dynamical System_ representation of signaling/regulatory networks for finding controls. The BiorXiv [preprint](https://www.biorxiv.org/content/10.1101/682989) can be found here. 
+
+ These are the scripts to find controls from two models:
 
 1. A Modeling Approach to Explain Mutually Exclusive and Co-Occurring Genetic Alterations in Bladder Tumorigenesis.
 PMID:26238783
