@@ -1,4 +1,4 @@
-# Repository for methods of control of Multistate networks
+# Repository for methods of control of multistate networks.
 
 Author: Luis Sordo Vieira, sordovieira@uchc.edu
 
