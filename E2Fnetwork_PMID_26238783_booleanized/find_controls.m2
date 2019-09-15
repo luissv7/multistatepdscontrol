@@ -34,31 +34,4 @@ results<<generats;
 
 
 results<<close
-
-
 exit
-
---Attempting the control delete the edge from RAS to E2F1 and knockdown E2F3
---load "aux/setup.txt"
---loadPackage "RationalPoints"
-
-
-
---load "setup.txt"
-
---Fec=new MutableList from F;
-
-
---Fec#(8)=sub(F_8,{x3=>0});
---Fec#(9)=0_R;
---Fec=toList Fec;
---I=ideal(Fec-X);
---S=ZZ/3[X];
---J=substitute(I,S);
---newpoints=rationalPoints J;
-
-
-
-
---for point in newpoints do (print point_23)
---#newpoints

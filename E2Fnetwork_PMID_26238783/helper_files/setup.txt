@@ -15,6 +15,3 @@ R = ZZ/p[join(X,Uedge,Unode)/value]/ideal(DEN/value);
 X=X/value; Uedge=Uedge/value; Unode=Unode/value;
 load "polynomials/polynomials.txt";
 F=apply(n,i->value("f"|(i+1)))/value;
-
-load "polynomials/polynomials.txt";
-F=apply(n,i->value("f"|(i+1)))/value;

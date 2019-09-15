@@ -7,8 +7,13 @@
 ├── find_node_control.m2
 ├── find_steady_states.m2
 ├── generate_polynomials.m2
+├── check.m2
 ├── output
 │   ├── targeted_edge_node.txt
+│   ├── steady_states.csv
+│   ├── parsed.txt
+│   ├── benchmark.txt
+│   ├── verify_controls.txt
 ├── polynomials
 │   ├── polynomials.txt
 ├── helper_files
@@ -40,3 +45,15 @@ to the path for this directory.
 * [Luis Sordo Vieira](mailto:luis.sordovieira@jax.org)
 * [David Murrugarra](mailto:murruagarra@uky.edu)
 
+
+### Checking steady states
+
+Checking the newly proliferative steady states dependens on the 
+
+``RationalPoints``` package in Macaulay2. I could not get this package to work properly in Macaulay2 v 1.14 so I used Macaulay 2 v 1.11 instead.
+
+We run this using 
+```bash
+M2 --script check.m2
+```
+from this directory.

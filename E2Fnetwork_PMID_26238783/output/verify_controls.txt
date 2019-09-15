@@ -1,0 +1,60 @@
+Control x14=0
+Number of steady states: 18
+Number of points with proliferation =0 :18
+-------------------------------
+Control x16=0
+Number of steady states: 20
+Number of points with proliferation =0 :16
+-------------------------------
+Control x13=0
+Control x13=0
+Number of steady states: 20
+Number of points with proliferation =0 :16
+-------------------------------
+Control x12=0
+Number of steady states: 18
+Number of points with proliferation =0 :16
+-------------------------------
+Control x9=0
+Number of steady states: 20
+Number of points with proliferation =0 :16
+-------------------------------
+Control x8=0
+Number of steady states: 6
+Number of points with proliferation =0 :6
+-------------------------------
+Control x3=0
+Number of steady states: 6
+Number of points with proliferation =0 :6
+-------------------------------
+Control x2=0
+Number of steady states: 12
+Number of points with proliferation =0 :12
+-------------------------------
+Delete edge (x2,x3)
+Number of steady states: 6
+Number of points with proliferation =0 :6
+-------------------------------
+Delete edge (x9,x16)
+Number of steady states: 20
+Number of points with proliferation =0 :16
+-------------------------------
+Delete edge (x3,x10)
+Number of steady states: 20
+Number of points with proliferation =0 :16
+-------------------------------
+Delete edge (x3,x8)
+Number of steady states: 6
+Number of points with proliferation =0 :6
+-------------------------------
+x11,x15=0
+Number of steady states: 16
+Number of points with proliferation =0 :12
+-------------------------------
+x3,x10=0 in f_9
+Number of steady states: 20
+Number of points with proliferation =0 :16
+-------------------------------
+Set x3=0 in f10 and set x9=0
+Number of steady states: 18
+Number of points with proliferation =0 :18

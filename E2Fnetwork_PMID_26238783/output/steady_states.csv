@@ -1,4 +1,4 @@
-EGFR, FGFR3, RAS, PTEN, PI3K, AKT, GRB2, SPRY, E2F1:1, E2F3:1, CyclinD1, CyclinE1, CyclinA, CDC25A, p16INK4a, p14ARF, RB1, RBL2, p21CIP, ATM:1, CHECK1_2:1, MDM2, TP53, Proliferation, Apoptosis:1, Growth_arrest, EGFRstimulus, FGFR3_Stimulus, DNA_damage, Growth_inhibitors
+EGFR, FGFR3, RAS, PTEN, PI3K, AKT, GRB2, SPRY, E2F1, E2F3, CyclinD1, CyclinE1, CyclinA, CDC25A, p16INK4a, p14ARF, RB1, RBL2, p21CIP, ATM, CHECK1_2, MDM2, TP53, Proliferation, Apoptosis, Growth_arrest, EGFRstimulus, FGFR3_Stimulus, DNA_damage, Growth_inhibitors
 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0
 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0
