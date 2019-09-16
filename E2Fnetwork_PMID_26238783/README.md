@@ -48,7 +48,7 @@ to the path for this directory.
 
 ### Checking steady states
 
-Checking the newly proliferative steady states dependens on the 
+Checking the newly proliferative steady states depends on the 
 
 ``RationalPoints``` package in Macaulay2. I could not get this package to work properly in Macaulay2 v 1.14 so I used Macaulay 2 v 1.11 instead.
 
